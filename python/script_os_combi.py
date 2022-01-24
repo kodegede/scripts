@@ -5,13 +5,20 @@ from random import choice
 
 print("script os testing:")
 print("a. getcwd")
-print("a. chdir")
+print("b. chdir to ../")
+print("c. listdir")
 
 cho = input("insert the choice:")
-dir = os.getcwd()
+folder = input ("insert directory:")
+dir = os.getcwd(folder)
+dir_list = os.listdir(folder)
 
 
 if cho=='a':
     print('current working directory is:', dir)
 if cho=='b':  
-    print(os.getcwd())
+    os.chdir('../')
+    print('current working directory is:', dir)
+if cho=='c': 
+    print(dir_list) 
+
