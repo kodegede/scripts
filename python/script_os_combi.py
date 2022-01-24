@@ -15,7 +15,7 @@ dir_list = os.listdir(folder)
 
 
 if cho=='a':
-    print('current working directory is:', dir)
+    print('current working directory is:', os.getcwd())
 if cho=='b':  
     os.chdir('../')
     print('current working directory is:', dir)
