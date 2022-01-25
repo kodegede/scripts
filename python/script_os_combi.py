@@ -1,7 +1,7 @@
 #this script use all of function of os module that I have learned before
 
 import os
-from random import choice
+
 
 print("script os testing:")
 print("a. getcwd")
@@ -15,7 +15,7 @@ dir_list = os.listdir(folder)
 
 
 if cho=='a':
-    print('current working directory is:', os.getcwd())
+    print('current working directory is:', os.getcwd(folder))
 if cho=='b':  
     os.chdir('../')
     print('current working directory is:', dir)
